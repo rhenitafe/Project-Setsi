@@ -16,7 +16,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark h-15">
   <div class="container">
-    <a class="navbar-brand" href="C:/Users/Admin/Desktop/Project%20Setsi/index.html">
+    <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" alt="">
         </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,17 +25,17 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="C:/Users/Admin/Desktop/Project%20Setsi/index.html">Home
+          <a class="nav-link" href="index.html">Home
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="C:/Users/Admin/Desktop/Project%20Setsi/about.html">About Us</a>
+          <a class="nav-link" href="about.html">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="C:/Users/Admin/Desktop/Project%20Setsi/services.html">Services</a>
+          <a class="nav-link" href="services.html">Services</a>
         </li>
         <li class="nav-item  active">
-          <a class="nav-link" href="C:/Users/Admin/Desktop/Project%20Setsi/services.html">Contact Us</a>
+          <a class="nav-link" href="contact.html">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -57,7 +57,7 @@
   <div class="row align-items-center justify-content-center">
     <div class="column">
       <br>
-      <form>
+      <form action="index.html" onsubmit="myFunction()">
         <label for="fname">FULL NAME*</label>
         <input type="text" id="fname" name="firstname" placeholder="Your Full Name..">
         <label for="lname">EMAIL ADDRESS*</label>
@@ -66,25 +66,21 @@
         <input type="text" id="lname" name="lastname" placeholder="Your last contact number..">
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-
-         <!-- Button trigger modal -->
-<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal3">
-  Launch demo modal
-</button>
+        <input type="submit" value="Send">
+        
       </form>
     </div>
-        <br>
-        <br>
-        <span style="text-align: center">Landline:&nbsp;641-0957<br>
-       Landline2:&nbsp;342-7847<br>
-       Mobile Number:&nbsp;09209051062<br>
-       0917 7560879<br>
-       0917 7560879<br>
+
+        <span style="text-align: center">Landline:&nbsp;(02) 7739-9175<br>
+       Mobile Number:&nbsp;<br>0926 9049231
+       0926 6754065<br>
+       0927 2636628<br>
       E-mail:&nbsp;denmarksestoso.ds@gmail.com</span> 
     
   </div>
 </div>
-
+        <br>
+        <br>
  <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
@@ -100,26 +96,10 @@
     </div>
   </footer>
 
-  <!-- Modal -->
-<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModal3Label">Thanks!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Message Sucessfully sent!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-       
-      </div>
-    </div>
-  </div>
-</div>
-
+     <script>
+function myFunction() {
+  alert("Your message was successfully sent!");
+}
+</script>
 </body>
 </html>
